@@ -206,7 +206,7 @@ img {
 .features-item {
   width: 270px;
 }
-.ftatures-svg-container {
+.features-svg-container {
   display: flex;
   background-color: var(--secondory-background-color);
   height: 120px;
