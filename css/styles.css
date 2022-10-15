@@ -143,16 +143,7 @@ img {
 }
 .icon-contlist {
   margin-right: 10px;
-  vertical-align: middle;
   fill: currentColor;
-}
-.icon-mail {
-  width: 16px;
-  height: 12px;
-}
-.icon-phone {
-  width: 10px;
-  height: 16px;
 }
 
 /* hero */
@@ -219,9 +210,10 @@ img {
   display: flex;
   background-color: var(--secondory-background-color);
   height: 120px;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 0;
 }
 .features .features-title {
   font-size: 14px;
@@ -308,8 +300,6 @@ img {
 }
 .icon-social {
   fill: var(--background-icon);
-  width: 20px;
-  height: 20px;
 }
 
 .soсial-link:hover,
@@ -358,9 +348,12 @@ img {
 
 .footer {
   background-color: var(--therd-background-color);
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+.footer-pocition {
+  display: flex;
+}
 .footer .header-logo {
   margin-right: 0;
   display: inline-block;
@@ -370,10 +363,14 @@ img {
 .footer .logo-text {
   color: var(--primery-wight);
 }
+/* .footer-address {
+  width: 231px;
+} */
 .address-list {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   row-gap: 9px;
+  width: 231px;
 }
 
 .address-link {
@@ -390,11 +387,20 @@ img {
 .address-contlink:focus {
   color: var(--accent-color);
 }
-.footer-social {
+.footer-container-social {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 12px 0 40px 0;
+  width: 206px;
+  margin-left: 70px;
+}
+.footer-social-title {
+  display: inline-block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
   color: var(--primery-background-color);
 }
 .footer-soсial-link {
@@ -408,8 +414,6 @@ img {
 }
 .footer-icon-social {
   fill: var(--primery-background-color);
-  width: 20px;
-  height: 20px;
 }
 .footer-soсial-link:hover,
 .footer-soсial-link:focus {
@@ -452,8 +456,12 @@ img {
   border: 1px solid var(--primery-gray);
   width: 370px;
 }
-.progects-link {
-  margin-bottom: 20px;
+
+.progects-item:hover,
+.progects-item:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .container-progects {
   padding: 20px 24px;
