@@ -86,16 +86,6 @@ img {
 
 /* header-nav */
 
-.header-link {
-  color: var(--primery-text-color);
-}
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-.header-link.current {
-  color: var(--accent-color);
-}
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -118,6 +108,13 @@ img {
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
 }
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-link.current {
+  color: var(--accent-color);
+}
 .header-navlist,
 .header-contlist,
 .header-nav,
@@ -131,9 +128,12 @@ img {
   gap: 50px;
 }
 .contlist-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--secondory-text-color);
 }
 .contlist-link:hover,
@@ -258,9 +258,6 @@ img {
 .container-team {
   padding: 30px 0;
 }
-/* .team-item {
-  width: calc((100%-90) / 4);
-} */
 .team-list .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -296,50 +293,44 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .icon-social {
   fill: var(--background-icon);
 }
-
 .soсial-link:hover,
 .soсial-link:focus {
   background-color: var(--accent-color);
 }
-.soсial-link:hover > .icon-social {
+.soсial-link:hover > .icon-social,
+.soсial-link:focus > .icon-social {
   fill: var(--primery-background-color);
 }
-
-/* client */
-/* .client {
-}
-.client-title {
-} */
 .client-list {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 .client-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-/* .client-link {
-} */
 .icon-client {
   fill: var(--background-icon);
 }
-
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
 }
-.client-link:hover > .icon-client {
+.client-link:hover > .icon-client,
+.client-link:focus > .icon-client {
   fill: var(--accent-color);
 }
 
@@ -352,26 +343,22 @@ img {
 }
 .footer-pocition {
   display: flex;
+  align-items: baseline;
 }
 .footer .header-logo {
   margin-right: 0;
   display: inline-block;
   margin-bottom: 20px;
 }
-
 .footer .logo-text {
   color: var(--primery-wight);
 }
-/* .footer-address {
-  width: 231px;
-} */
 .address-list {
   display: inline-flex;
   flex-direction: column;
   row-gap: 9px;
   width: 231px;
 }
-
 .address-link {
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -387,10 +374,6 @@ img {
   color: var(--accent-color);
 }
 .footer-container-social {
-  display: inline-flex;
-  flex-wrap: wrap;
-  padding: 12px 0 40px 0;
-  width: 206px;
   margin-left: 70px;
 }
 .footer-social-title {
@@ -434,6 +417,7 @@ img {
   border-color: transparent;
   letter-spacing: 0.03em;
   padding: 6px 22px;
+  margin-bottom: 50px;
   font-family: 'Roboto';
   background-color: var(--secondory-background-color);
 }
@@ -448,32 +432,31 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 50px;
 }
 .progects-item {
-  background-color: var(--primery-wight);
-  border: 1px solid var(--primery-gray);
   width: 370px;
-}
-
-.progects-item:hover,
-.progects-item:focus {
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .container-progects {
   padding: 20px 24px;
+}
+.progects-link {
+  display: block;
+
   border: 1px solid var(--primery-gray);
 }
-.progects-link .progects-title {
+.progects-link:hover,
+.progects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.progects-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
   color: var(--primery-text-color);
 }
-.progects-link .progects-text {
+.progects-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
