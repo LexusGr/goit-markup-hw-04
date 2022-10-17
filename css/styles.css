@@ -309,15 +309,13 @@ img {
 .client-list {
   display: flex;
   gap: 30px;
-  justify-content: center;
-}
-.client-item {
-  width: 170px;
-  height: 92px;
 }
 .client-link {
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
